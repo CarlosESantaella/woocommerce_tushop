@@ -449,3 +449,18 @@ input[type="submit"].alt:hover,
   font-size: 16px;
   font-weight: bold; 
 }
+.reservados{
+  background-color: #e182aB;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.destacada{
+  margin-bottom: 15px;
+
+}
+.home .site-header{
+  margin-bottom: 1.5rem !important;
+}

@@ -12,4 +12,48 @@
     return $columnas;
   }
 
-?>
+  //Cambiar a pesos mexicanos (MXN)
+  add_filter('woocommerce_currency_symbol', 'carolinaspa_mxn', 10, 2);
+
+  function carolinaspa_mxn($simbolo, $moneda){
+    $simbolo = 'MXN $';
+
+    return $simbolo;
+  }
+  
+  //modificar los creditos del footer
+  function carolinaspa_creditos()
+  {
+    remove_action('storefront_footer', 'storefront_credit', 20);
+    add_action('storefront_after_footer', 'carolinaspa_nuevo_footer', 20);
+  }
+  add_action('init', 'carolinaspa_creditos');
+
+  function carolinaspa_nuevo_footer()
+  {
+    echo "<div class='reservados'>";
+    echo "Derechos Reservados &copy; ".get_bloginfo('name')." ".get_the_date("Y");
+    echo "</div>";
+  }
+
+  // Agregar imagen al homepage
+
+  function carolinaspa_descuento()
+  {
+    $imagen = '<div class="destacada">';
+
+    $imagen .= '<img src="' . get_stylesheet_directory_uri() . '/img/cupon.jpg' . '" />';
+    $imagen .= '</div>';
+    echo $imagen;
+  }
+  add_action('storefront_page_before', 'carolinaspa_descuento', 5);
+
+  //mostrar 4 categorias en el homepage
+
+  function carolinaspa_categorias($args)
+  {
+    $args['limit'] = 4;
+    $args['columns'] = 4;
+    return $args;
+  }
+  add_filter('storefront_product_categories_args', 'carolinaspa_categorias', 100);

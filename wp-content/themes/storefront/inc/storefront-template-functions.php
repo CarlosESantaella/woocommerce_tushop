@@ -348,7 +348,7 @@ if ( ! function_exists( 'storefront_page_content' ) ) {
 	 */
 	function storefront_page_content() {
 		?>
-		<div class="entry-content">
+		<div class="entry-content ">
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages(

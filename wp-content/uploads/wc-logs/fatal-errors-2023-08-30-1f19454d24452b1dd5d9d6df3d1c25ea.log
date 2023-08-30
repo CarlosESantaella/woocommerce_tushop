@@ -1,0 +1,107 @@
+2023-08-30T06:31:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php on line 62 and at least 2 expected in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php:163
+Stack trace:
+#0 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php(62): WP_Widget->__construct()
+#1 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(115): WP_Widget_Factory->register('Accepted_Paymen...')
+#2 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce-accepted-payment-methods\accepted-payment-methods.php(239): register_widget('Accepted_Paymen...')
+#3 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): apm_register_widgets('')
+#4 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(1858): do_action('widgets_init')
+#7 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#8 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-settings.php(632): do_action('init')
+#11 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php en la línea 163
+
+2023-08-30T06:31:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php on line 62 and at least 2 expected in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php:163
+Stack trace:
+#0 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php(62): WP_Widget->__construct()
+#1 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(115): WP_Widget_Factory->register('Accepted_Paymen...')
+#2 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce-accepted-payment-methods\accepted-payment-methods.php(239): register_widget('Accepted_Paymen...')
+#3 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): apm_register_widgets('')
+#4 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(1858): do_action('widgets_init')
+#7 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#8 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-settings.php(632): do_action('init')
+#11 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php en la línea 163
+
+2023-08-30T06:31:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php on line 62 and at least 2 expected in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php:163
+Stack trace:
+#0 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php(62): WP_Widget->__construct()
+#1 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(115): WP_Widget_Factory->register('Accepted_Paymen...')
+#2 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce-accepted-payment-methods\accepted-payment-methods.php(239): register_widget('Accepted_Paymen...')
+#3 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): apm_register_widgets('')
+#4 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(1858): do_action('widgets_init')
+#7 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#8 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-settings.php(632): do_action('init')
+#11 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\plugin-install.php(16): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php en la línea 163
+
+2023-08-30T06:31:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php on line 62 and at least 2 expected in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php:163
+Stack trace:
+#0 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php(62): WP_Widget->__construct()
+#1 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(115): WP_Widget_Factory->register('Accepted_Paymen...')
+#2 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce-accepted-payment-methods\accepted-payment-methods.php(239): register_widget('Accepted_Paymen...')
+#3 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): apm_register_widgets('')
+#4 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(1858): do_action('widgets_init')
+#7 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#8 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-settings.php(632): do_action('init')
+#11 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\plugin-install.php(16): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php en la línea 163
+
+2023-08-30T06:32:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php on line 62 and at least 2 expected in C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php:163
+Stack trace:
+#0 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget-factory.php(62): WP_Widget->__construct()
+#1 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(115): WP_Widget_Factory->register('Accepted_Paymen...')
+#2 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce-accepted-payment-methods\accepted-payment-methods.php(239): register_widget('Accepted_Paymen...')
+#3 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): apm_register_widgets('')
+#4 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#5 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\widgets.php(1858): do_action('widgets_init')
+#7 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): wp_widgets_init('')
+#8 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-settings.php(632): do_action('init')
+#11 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-includes\class-wp-widget.php en la línea 163
+
+2023-08-30T06:41:25+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 36
+
+2023-08-30T06:58:43+00:00 CRITICAL syntax error, unexpected end of file, expecting "{" en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 41
+
+2023-08-30T07:02:43+00:00 CRITICAL syntax error, unexpected token "}" en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 46
+
+2023-08-30T07:04:45+00:00 CRITICAL syntax error, unexpected token "}" en C:\xampp\htdocs\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 46
+
