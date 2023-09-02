@@ -464,3 +464,89 @@ input[type="submit"].alt:hover,
 .home .site-header{
   margin-bottom: 1.5rem !important;
 }
+
+span.ahorro{
+  /* background-color: #06c486;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  font-weight:  bold;
+  margin-top: 15px; */
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .3em 1em;
+  text-align: right;
+  display:inline-block;
+  border: 1px solid #4cae4c;
+  margin-top: .8em;
+}
+
+span.ahorro .amount{
+  font-weight: 400;
+}
+
+.onsale{
+  border: none;
+  background-color: #4cae4c;
+  color: white;
+  font-size: 1.2em;
+}
+
+footer span.ahorro{
+  color: white;
+}
+
+/* nueva sección homepage */
+
+.imagen-categoria{
+  margin-bottom: 30px;
+  position: relative;
+}
+.imagen-destacada{
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.imagen-categoria h1{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #e282a8;
+  color: white;
+  padding: 5px 20px;
+}
+
+@media (min-width: 992px){
+  .spa-en-casa::after{
+    clear: both;
+    content: '';
+    display: block;
+  }
+  .imagen-destacada{
+    height: 1500px;
+    background-attachment: fixed;
+  }
+  .spa-en-casa .imagen-categoria{
+    width: 55%;
+    float: left;
+  }
+  .spa-en-casa .productos{
+    width: 35%;
+    float: right;
+  }
+  .spa-en-casa .productos ul.products li.product{
+    width: 70% !important;
+  }
+}
+
+/* subtitulo producto */
+
+.subtitulo{
+  color: #969696;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 5px;
+}

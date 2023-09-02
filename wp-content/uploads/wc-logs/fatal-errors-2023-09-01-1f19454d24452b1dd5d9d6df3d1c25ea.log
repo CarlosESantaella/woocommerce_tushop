@@ -1,0 +1,35 @@
+2023-09-01T05:11:09+00:00 CRITICAL syntax error, unexpected identifier "the_fild", expecting variable or "$" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 176
+
+2023-09-01T05:11:10+00:00 CRITICAL syntax error, unexpected identifier "the_fild", expecting variable or "$" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 176
+
+2023-09-01T05:11:10+00:00 CRITICAL syntax error, unexpected identifier "the_fild", expecting variable or "$" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 176
+
+2023-09-01T05:11:11+00:00 CRITICAL syntax error, unexpected identifier "the_fild", expecting variable or "$" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 176
+
+2023-09-01T05:21:36+00:00 CRITICAL syntax error, unexpected integer "100" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 140
+
+2023-09-01T05:21:57+00:00 CRITICAL syntax error, unexpected integer "100" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 140
+
+2023-09-01T05:28:19+00:00 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\templates\single-product\tabs\tabs.php:38
+Stack trace:
+#0 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1626): wc_get_template('single-product/...')
+#2 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): woocommerce_output_product_data_tabs('')
+#3 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#4 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\templates\content-single-product.php(72): do_action('woocommerce_aft...')
+#6 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\template.php(787): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\laragon\\www\\...', false)
+#8 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\templates\single-product.php(37): wc_get_template_part('content', 'single-product')
+#9 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#10 C:\laragon\www\woocommerce\tienda-virtual-1\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#11 C:\laragon\www\woocommerce\tienda-virtual-1\index.php(17): require('C:\\laragon\\www\\...')
+#12 {main}
+  thrown en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\plugins\woocommerce\templates\single-product\tabs\tabs.php en la línea 38
+
+2023-09-01T05:30:39+00:00 CRITICAL syntax error, unexpected token "{" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 187
+
+2023-09-01T05:36:43+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 203
+
+2023-09-01T05:36:51+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 203
+
