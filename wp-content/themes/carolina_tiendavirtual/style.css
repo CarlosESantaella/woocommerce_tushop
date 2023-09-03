@@ -550,3 +550,21 @@ footer span.ahorro{
   font-style: italic;
   margin-bottom: 5px;
 }
+
+/* cupon carrito */
+.cupon-carrito{
+  margin-bottom: 20px;
+
+}
+
+/* checkout remover extras */
+.woocommerce-checkout .storefront-primary-navigation,
+.woocommerce-checkout .site-search,
+.woocommerce-checkout .footer-widgets{
+  display: none;
+}
+
+/* campos checkout */
+#rfc_field{
+  display: none;
+}

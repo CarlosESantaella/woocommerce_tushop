@@ -49,11 +49,14 @@ function carolinaspa_nuevo_footer()
 
 function carolinaspa_descuento()
 {
-  $imagen = '<div class="destacada">';
+  if(is_front_page()){
 
-  $imagen .= '<img src="' . get_stylesheet_directory_uri() . '/img/cupon.jpg' . '" />';
-  $imagen .= '</div>';
-  echo $imagen;
+    $imagen = '<div class="destacada">';
+  
+    $imagen .= '<img src="' . get_stylesheet_directory_uri() . '/img/cupon.jpg' . '" />';
+    $imagen .= '</div>';
+    echo $imagen;
+  }
 }
 add_action('storefront_page_before', 'carolinaspa_descuento', 5);
 
@@ -62,22 +65,24 @@ add_action('storefront_page_before', 'carolinaspa_descuento', 5);
 add_action('storefront_page_before', 'carolinaspa_spacasa_homepage', 30);
 function carolinaspa_spacasa_homepage()
 {
-  echo "<div class='spa-en-casa'>";
-  echo "<div class='imagen-categoria'>";
-  $imagen = get_term_meta(20, 'thumbnail_id', true);
-  $imagen_categoria = wp_get_attachment_image_src($imagen, 'full');
-
-  if ($imagen_categoria) {
-    echo "<div class='imagen-destacada' style='background-image: url(" . $imagen_categoria[0] . ")'></div>";
-    echo "<h1>Spa en casa</h1>";
+  if(is_front_page()){
+    echo "<div class='spa-en-casa'>";
+    echo "<div class='imagen-categoria'>";
+    $imagen = get_term_meta(20, 'thumbnail_id', true);
+    $imagen_categoria = wp_get_attachment_image_src($imagen, 'full');
+  
+    if ($imagen_categoria) {
+      echo "<div class='imagen-destacada' style='background-image: url(" . $imagen_categoria[0] . ")'></div>";
+      echo "<h1>Spa en casa</h1>";
+      echo "</div>";
+    }
+    echo "<div class='productos'>";
+  
+    echo do_shortcode('[product_category columns="3" category="spa-en-casa"]');
+  
+    echo "</div>";
     echo "</div>";
   }
-  echo "<div class='productos'>";
-
-  echo do_shortcode('[product_category columns="3" category="spa-en-casa"]');
-
-  echo "</div>";
-  echo "</div>";
 }
 
 //mostrar 4 categorias en el homepage
@@ -203,4 +208,165 @@ function mi_gran_video()
   }else{
     echo "No hay video disponible";
   }
+}
+
+// Boton para vaciar el carrito
+add_action('woocommerce_cart_actions', 'carolinaspa_limpiar_carrito');
+function carolinaspa_limpiar_carrito()
+{
+  echo "<a class='button' href='?vaciar-carrito=true' >".__('Vaciar Carrito', 'woocommerce'). "</a>";
+}
+
+// Vaciar el carrito
+add_action('init', 'carolinaspa_vaciar_carrito');
+function carolinaspa_vaciar_carrito()
+{
+  if(isset($_GET['vaciar-carrito'])){
+    global $woocommerce;
+    $woocommerce->cart->empty_cart();
+  }
+}
+
+//Imprimir banner en el carrito
+add_action('woocommerce_check_cart_items', 'carolinaspa_imprimir_banner_carrito', 10);
+function carolinaspa_imprimir_banner_carrito()
+{
+  global $post;
+  $imagen = get_field('imagen', $post->ID);
+  if($imagen){
+    echo "<div class='cupon-carrito'>";
+
+    echo "<img src='".$imagen."'>";
+    echo "</div>";
+  }
+}
+
+// Eliminar un campo del checkout
+add_filter('woocommerce_checkout_fields', 'carolinaspa_remover_telefono_checkout', 20, 1);
+function carolinaspa_remover_telefono_checkout($campos)
+{
+  unset($campos['billing']['billing_phone']);
+  // $campos['billing']['billing_email']['class'] = array('form-row-wide');
+  return $campos;
+}
+
+//agregar campos en checkout
+add_filter('woocommerce_checkout_fields', 'carolinaspa_rfc', 40, 1);
+function carolinaspa_rfc($campos){
+
+  $campos['billing']['factura'] = array(
+    'css' => array('form-row-wide'),
+    'label' => 'Requiere factura?',
+    'type' => 'checkbox',
+    'id' => 'factura'
+  );
+
+  $campos['billing']['rfc'] = array(
+    'label' => 'RFC',
+    'css' => array('form-row-wide'),
+    'required' => 0,
+    'priority' => 120
+  );
+
+  $campos['order']['escuchaste_nosotros'] = array(
+    'type' => 'select',
+    'css' => array('form-row-wide'),
+    'label' => '¿Como te enteraste de nosotros?',
+    'options' => array(
+      'default' => 'Seleccione...',
+      'tv' => 'TV',
+      'radio' => 'Radio',
+      'periodico' => 'Periodico',
+      'internet' => 'Facebook'
+    )
+  );
+
+  return $campos;
+}
+
+/** Ocultar / mostrar en checkout el rfc */
+function carolinaspa_mostrar_rfc()
+{
+  if(is_checkout()){ ?>
+    <script>
+      jQuery(document).ready(function(){
+        jQuery('input[type="checkbox"]#factura').on('change', function(){
+          jQuery('#rfc_field').slideToggle();
+        })
+      })
+    </script>
+
+  <?php }
+}
+add_action('wp_footer', 'carolinaspa_mostrar_rfc');
+
+/** insertar campos perzonalizados en base de datos en checkout */
+
+add_action('woocommerce_checkout_update_order_meta', 'carolinaspa_insertar_campos_personalizados', 10);
+function carolinaspa_insertar_campos_personalizados($orden_id)
+{
+  if(!empty($_POST['rfc'])){
+    update_post_meta($orden_id, 'RFC', sanitize_text_field($_POST['rfc']));
+  }
+  if(!empty($_POST['factura'])){
+    update_post_meta($orden_id, 'factura', sanitize_text_field($_POST['factura']));
+  }
+  if(!empty($_POST['escuchaste_nosotros'])){
+    update_post_meta($orden_id, 'escuchaste_nosotros', sanitize_text_field($_POST['escuchaste_nosotros']));
+  }
+}
+
+/** agregar columnas personalizadas a las ordenes */
+add_filter('manage_edit-shop_order_columns', 'carolinaspa_columnas_ordenes');
+function carolinaspa_columnas_ordenes($columnas)
+{
+  echo '<pre>';
+  print_r($columnas);
+  echo '</pre>';
+  $columnas['factura'] = __('Factura', 'woocommerce');
+  $columnas['rfc'] = __('RFC', 'woocommerce');
+  $columnas['escuchaste_nosotros'] = __('Escuchaste nosotros', 'woocommerce');
+  return $columnas;
+}
+
+/** mostrar constenido dentro de las columnas */
+add_action('manage_shop_order_posts_custom_column', 'carolinaspa_columnas_informacion');
+function carolinaspa_columnas_informacion($columnas)
+{
+  global $post, $woocommerce, $order;
+
+
+//obtiene los valores de la orden (se pasa el id de la orden)
+  if(empty($order) || ($order->id ?? '') != ($post->ID ?? '')){
+    $order = new WC_Order($post->ID);
+    
+  }
+  if($columnas == 'factura'){
+    $factura =  get_post_meta($post->ID, 'factura', true);
+
+    if($factura){
+      echo 'Si';
+    }
+  }
+
+  if($columnas == 'rfc'){
+    echo get_post_meta($post->ID, 'rfc', true);
+  }
+  if($columnas == 'escuchaste_nosotros'){
+    echo get_post_meta($post->ID, 'escuchaste_nosotros', true);
+  }
+}
+
+//mostrando los campos personalizados en pedidos
+add_action('woocommerce_admin_order_data_after_billing_address', 'carolinaspa_mostrar_informacion_ordenes');
+function carolinaspa_mostrar_informacion_ordenes($pedido)
+{
+  global $post;
+  $factura = get_post_meta($pedido->ID, 'factura', true);
+  if($factura){
+    echo '<p><strong>'. __('Factura', 'woocommerce') . ':</strong>Si</p>';
+    echo '<p><strong>'. __('RFC', 'woocommerce') . ':</strong>' . get_post_meta($pedido->id, 'rfc', true) . '</p>';
+    
+  }
+  echo '<p><strong>'. __('Escuchaste Nosotros', 'woocommerce') . ':</strong>' . get_post_meta($pedido->id, 'escuchaste_nosotros', true) . '</p>';
 }

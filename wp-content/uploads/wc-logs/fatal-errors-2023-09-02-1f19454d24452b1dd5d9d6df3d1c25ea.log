@@ -1,0 +1,50 @@
+2023-09-02T20:40:30+00:00 CRITICAL syntax error, unexpected token ")" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 308
+
+2023-09-02T20:53:14+00:00 CRITICAL Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php:1521
+Stack trace:
+#0 C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php(1521): array_keys(NULL)
+#1 C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php(1575): WP_List_Table->print_table_description()
+#2 C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\edit.php(495): WP_List_Table->display()
+#3 {main}
+  thrown en C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php en la línea 1521
+
+2023-09-02T20:53:35+00:00 CRITICAL Uncaught TypeError: array_keys(): Argument #1 ($array) must be of type array, null given in C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php:1521
+Stack trace:
+#0 C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php(1521): array_keys(NULL)
+#1 C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php(1575): WP_List_Table->print_table_description()
+#2 C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\edit.php(495): WP_List_Table->display()
+#3 {main}
+  thrown en C:\laragon\www\woocommerce\tienda-virtual-1\wp-admin\includes\class-wp-list-table.php en la línea 1521
+
+2023-09-02T21:01:25+00:00 CRITICAL syntax error, unexpected token "}" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 339
+
+2023-09-02T21:14:10+00:00 CRITICAL syntax error, unexpected token "}" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 353
+
+2023-09-02T21:21:23+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:25+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:25+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:27+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:29+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:30+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:30+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:32+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:32+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:21:33+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 361
+
+2023-09-02T21:24:54+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 368
+
+2023-09-02T21:24:56+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 368
+
+2023-09-02T21:25:01+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 368
+
+2023-09-02T21:26:22+00:00 CRITICAL syntax error, unexpected single-quoted string "</p>", expecting "," or ";" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 368
+
