@@ -1,0 +1,10 @@
+2023-09-03T20:35:56+00:00 CRITICAL syntax error, unexpected identifier "aquí" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 377
+
+2023-09-03T20:36:06+00:00 CRITICAL syntax error, unexpected identifier "aquí" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 377
+
+2023-09-03T20:36:08+00:00 CRITICAL syntax error, unexpected identifier "aquí" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 377
+
+2023-09-03T23:50:08+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 422
+
+2023-09-03T23:54:11+00:00 CRITICAL syntax error, unexpected token ")" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 432
+

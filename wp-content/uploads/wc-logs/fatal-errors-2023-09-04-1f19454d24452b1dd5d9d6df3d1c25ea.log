@@ -1,0 +1,27 @@
+2023-09-04T00:26:27+00:00 CRITICAL syntax error, unexpected end of file en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 462
+
+2023-09-04T00:32:46+00:00 CRITICAL Uncaught TypeError: join(): Argument #2 ($array) must be of type ?array, string given in C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php:469
+Stack trace:
+#0 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php(469): join(Array, ', ')
+#1 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): carolinaspa_productos_relacionados('')
+#2 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#3 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\storefront\inc\storefront-template-functions.php(423): do_action('storefront_post...')
+#5 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(310): storefront_post_content('')
+#6 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#7 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\storefront\content-single.php(21): do_action('storefront_sing...')
+#9 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\template.php(787): require('C:\\laragon\\www\\...')
+#10 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\template.php(720): load_template('C:\\laragon\\www\\...', false, Array)
+#11 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#12 C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\storefront\single.php(19): get_template_part('content', 'single')
+#13 C:\laragon\www\woocommerce\tienda-virtual-1\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#14 C:\laragon\www\woocommerce\tienda-virtual-1\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#15 C:\laragon\www\woocommerce\tienda-virtual-1\index.php(17): require('C:\\laragon\\www\\...')
+#16 {main}
+  thrown en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 469
+
+2023-09-04T03:00:42+00:00 CRITICAL syntax error, unexpected identifier "remove_action" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 12
+
+2023-09-04T15:16:47+00:00 CRITICAL syntax error, unexpected token "function" en C:\laragon\www\woocommerce\tienda-virtual-1\wp-content\themes\carolina_tiendavirtual\functions.php en la línea 7
+

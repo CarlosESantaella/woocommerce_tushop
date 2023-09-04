@@ -1,0 +1,62 @@
+body{
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body::after{
+  content: '';
+  position: absolute;
+  background: rgb(0 0 0 / .3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#login,
+.language-switcher{
+  position: relative;
+  z-index: 90;
+}
+.login h1 a{
+  background-image: url('../img/logo.png');
+  margin: 0;
+  width: 100%;
+  background-size: 200px;
+  height: 120px;
+  background-position: center;
+}
+.login label{
+  color: black;
+}
+.login #nav a,
+.login #backtoblog a,
+.login #nav a:hover,
+.login #backtoblog a:hover{
+  color: white;
+}
+.login #backtoblog,
+.login #nav{
+  text-align: center;
+}
+.login .button-primary,
+.login .button-primary:active,
+.login .button-primary:focus{
+  background-color: #e182a8;
+  border: #e182a8;
+  text-shadow: 0;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0 30px !important;
+  height: auto !important;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  transition: all .3s ease 0s;
+}
+.login .button-primary:hover{
+  background-color: #c8698f;
+}
+
+.login a{
+  color: #e182a8;
+}
