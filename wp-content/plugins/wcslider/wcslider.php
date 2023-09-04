@@ -20,7 +20,7 @@ function wcslider_scripts()
 {
   wp_enqueue_style('bxslider', WCSLIDER_PATH . '/css/jquery.bxslider.min.css');
   if (wp_script_is('jquery', 'enqueued')) {
-    return;
+    
   } else {
     wp_enqueue_script('jquery');
   }
